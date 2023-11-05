@@ -2,10 +2,10 @@ from tkinter import *
 
 window = Tk()
 window.title("Mile to km converter")
-window.minsize(width=400, height=200)
+window.config(padx=20, pady=20)
 
 # Entry for miles
-miles_entry = Entry()
+miles_entry = Entry(width=7)
 miles_entry.grid(column=1, row=0)
 
 # Label for miles
@@ -25,7 +25,7 @@ km_text.grid(column=2, row=1)
 
 def mile_to_km():
     mile = float(miles_entry.get())
-    km = float(mile * 1.6)
+    km = mile * 1.609
 
     km_value.config(text=km)
 
