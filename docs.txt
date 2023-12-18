@@ -1,0 +1,17 @@
+Tkinter Layout Managers -> define how to position each of the widget
+
+1. Pack -> packs each widget next to each other in a vaguely logical format
+        -> by default always start from the top and pack every other widget just below the previous one
+        -> Example: my_label.pack(side="left")
+        -> problem: unable to specify precise position
+
+2. Place -> is all about precise positioning
+         -> can provide X and Y value
+         -> Example: my_label.place(x=0, y=0)
+         -> problem: it is so specific have to work on precise coordinates
+
+3. Grid -> imagines that your entire program is a grid and you can divide it into any number of rows and columns
+        -> Example: my_label.grid(column=0, row=0)
+        -> is relative to other components
+
+NOte* -> You can't mix up grid and pack in the same program
